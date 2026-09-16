@@ -19,7 +19,7 @@
   <!-- FRENCH -->
   <section class="card show" data-lang="fr">
     <h1>Politique de confidentialité</h1>
-    <p class="eff">En vigueur le 29 juin 2026</p>
+    <p class="eff">En vigueur le 16 septembre 2026</p>
     <p class="lead">PokéCote est conçu pour respecter votre vie privée : pas de compte, pas de publicité, pas de pistage inter-apps. La reconnaissance des cartes s’effectue sur votre appareil et votre collection est stockée localement.</p>
 
     <h2>Qui sommes-nous</h2>
@@ -30,6 +30,7 @@
       <li><strong>Images de l’appareil photo :</strong> utilisées uniquement pour reconnaître le texte des cartes <strong>sur votre appareil</strong> (via Google ML Kit, en local). Les images ne sont ni téléversées ni conservées par nous.</li>
       <li><strong>Votre collection :</strong> les cartes et informations que vous enregistrez sont stockées <strong>localement sur votre appareil</strong>. Elles ne nous sont pas transmises.</li>
       <li><strong>Recherches de cartes :</strong> pour identifier une carte et afficher sa cote, l’application envoie des identifiants/termes de carte au service tiers <strong>TCGdex</strong> (api.tcgdex.net) afin de récupérer les détails, images et prix de marché (Cardmarket en EUR / TCGplayer en USD). Aucune donnée personnelle n’est incluse dans ces requêtes.</li>
+      <li><strong>Historique des cotes :</strong> pour afficher l’évolution de la valeur de votre collection, l’application télécharge des fichiers de prix publics depuis <strong>data.cotemon.app</strong> (hébergé sur Cloudflare R2), un fichier par série que vous possédez. Ces fichiers sont identiques pour tous les utilisateurs et ne contiennent aucune donnée personnelle. Comme pour toute requête web, Cloudflare traite l’adresse IP de la connexion, et les identifiants de série demandés indiquent quelles séries vous collectionnez.</li>
       <li><strong>Achats et abonnements :</strong> gérés par <strong>Apple</strong> et <strong>RevenueCat</strong>. Pour gérer votre abonnement, RevenueCat traite un identifiant d’utilisateur généré aléatoirement, des informations sur l’appareil/le système et l’historique des transactions. Apple traite votre paiement. Nous n’avons jamais accès à vos coordonnées bancaires.</li>
       <li><strong>Statistiques d’utilisation :</strong> nous utilisons <strong>PostHog</strong> (hébergé dans l’UE) pour collecter des événements d’usage anonymes et internes à l’application (par exemple les fonctionnalités utilisées et les étapes du parcours d’abonnement) afin d’améliorer l’application. Il ne s’agit ni de publicité ni de pistage inter-apps ; les adresses IP sont supprimées à la réception. Vous pouvez vous désinscrire à tout moment dans les Réglages de l’application.</li>
     </ul>
@@ -39,7 +40,7 @@
       <li>Nous ne collectons pas votre nom ou votre e-mail (sauf si vous nous écrivez).</li>
       <li>Nous n’affichons aucune publicité et n’utilisons aucun traceur publicitaire ou inter-apps.</li>
       <li>Nous ne vendons ni ne louons vos données.</li>
-      <li>Nous n’exploitons pas de serveur ni de système de comptes.</li>
+      <li>Nous n’exploitons aucun système de comptes. Les fichiers de prix que l’application télécharge sont statiques et identiques pour tous ; nous n’enregistrons aucun profil d’utilisateur.</li>
     </ul>
 
     <h2>Services tiers</h2>
@@ -49,6 +50,7 @@
       <li>RevenueCat — <a href="https://www.revenuecat.com/privacy/" target="_blank" rel="noopener">revenuecat.com/privacy</a></li>
       <li>PostHog — <a href="https://posthog.com/privacy" target="_blank" rel="noopener">posthog.com/privacy</a></li>
       <li>TCGdex — <a href="https://tcgdex.dev/" target="_blank" rel="noopener">tcgdex.dev</a></li>
+      <li>Cloudflare (hébergement des fichiers de prix) — <a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener">cloudflare.com/privacypolicy</a></li>
       <li>Google ML Kit (reconnaissance de texte, exécutée sur l’appareil)</li>
     </ul>
 
@@ -59,7 +61,7 @@
     <p>Lorsque le RGPD s’applique, le traitement repose sur l’exécution du contrat (achats) et notre intérêt légitime à fournir les fonctionnalités de l’application. Vous disposez des droits d’accès, de rectification, d’effacement et d’opposition. La plupart de vos données résidant sur votre appareil, vous en gardez le contrôle direct ; pour le reste, écrivez-nous à <a href="mailto:soufianechalouh@gmail.com">soufianechalouh@gmail.com</a>.</p>
 
     <h2>Transferts internationaux</h2>
-    <p>Apple, RevenueCat et TCGdex peuvent traiter des données en dehors de l’Espace économique européen, dans le respect de garanties appropriées.</p>
+    <p>Apple, RevenueCat, TCGdex et Cloudflare peuvent traiter des données en dehors de l’Espace économique européen, dans le respect de garanties appropriées.</p>
 
     <h2>Enfants</h2>
     <p>L’application n’est pas destinée aux enfants de moins de 13 ans et nous ne collectons pas sciemment de données personnelles les concernant.</p>
@@ -74,7 +76,7 @@
   <!-- ENGLISH -->
   <section class="card" data-lang="en">
     <h1>Privacy Policy</h1>
-    <p class="eff">Effective 29 June 2026</p>
+    <p class="eff">Effective 16 September 2026</p>
     <p class="lead">PokéCote is built to respect your privacy: no account, no ads, no cross-app tracking. Card recognition runs on your device and your collection is stored locally.</p>
 
     <h2>Who we are</h2>
@@ -85,6 +87,7 @@
       <li><strong>Camera images:</strong> used only to recognize card text <strong>on your device</strong> (via Google ML Kit, locally). Images are not uploaded or retained by us.</li>
       <li><strong>Your collection:</strong> the cards and notes you save are stored <strong>locally on your device</strong>. They are not transmitted to us.</li>
       <li><strong>Card lookups:</strong> to identify a card and show its value, the app sends card identifiers/search terms to the third-party service <strong>TCGdex</strong> (api.tcgdex.net) to retrieve details, images, and market prices (Cardmarket in EUR / TCGplayer in USD). No personal data is included in these requests.</li>
+      <li><strong>Price history:</strong> to show how your collection’s value changes over time, the app downloads public price files from <strong>data.cotemon.app</strong> (hosted on Cloudflare R2), one file per card set you own. These files are identical for every user and contain no personal data. As with any web request, Cloudflare processes the connection’s IP address, and the set identifiers requested indicate which sets you collect.</li>
       <li><strong>Purchases and subscriptions:</strong> handled by <strong>Apple</strong> and <strong>RevenueCat</strong>. To manage your subscription, RevenueCat processes a randomly generated user identifier, device/OS information, and transaction history. Apple processes your payment. We never have access to your payment card details.</li>
       <li><strong>Usage analytics:</strong> we use <strong>PostHog</strong> (EU-hosted) to collect anonymous, first-party product-usage events (for example, which features are used and subscription funnel steps) to improve the app. This is not advertising and not cross-app tracking; IP addresses are discarded at ingestion. You can opt out anytime in the app’s Settings.</li>
     </ul>
@@ -94,7 +97,7 @@
       <li>We do not collect your name or email (unless you write to us).</li>
       <li>We show no ads and use no advertising or cross-app tracking.</li>
       <li>We do not sell or rent your data.</li>
-      <li>We operate no server and no account system.</li>
+      <li>We operate no account system. The price files the app downloads are static and the same for everyone; we build no user profile from them.</li>
     </ul>
 
     <h2>Third-party services</h2>
@@ -104,6 +107,7 @@
       <li>RevenueCat — <a href="https://www.revenuecat.com/privacy/" target="_blank" rel="noopener">revenuecat.com/privacy</a></li>
       <li>PostHog — <a href="https://posthog.com/privacy" target="_blank" rel="noopener">posthog.com/privacy</a></li>
       <li>TCGdex — <a href="https://tcgdex.dev/" target="_blank" rel="noopener">tcgdex.dev</a></li>
+      <li>Cloudflare (price-file hosting) — <a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener">cloudflare.com/privacypolicy</a></li>
       <li>Google ML Kit (text recognition, runs on device)</li>
     </ul>
 
@@ -114,7 +118,7 @@
     <p>Where the GDPR applies, processing is based on performance of the contract (purchases) and our legitimate interest in providing the app’s features. You have rights of access, rectification, erasure, and objection. As most of your data lives on your device, you control it directly; for the rest, email us at <a href="mailto:soufianechalouh@gmail.com">soufianechalouh@gmail.com</a>.</p>
 
     <h2>International transfers</h2>
-    <p>Apple, RevenueCat, and TCGdex may process data outside the European Economic Area, subject to appropriate safeguards.</p>
+    <p>Apple, RevenueCat, TCGdex, and Cloudflare may process data outside the European Economic Area, subject to appropriate safeguards.</p>
 
     <h2>Children</h2>
     <p>The app is not directed to children under 13, and we do not knowingly collect personal data from them.</p>
