@@ -19,28 +19,31 @@
   <!-- FRENCH -->
   <section class="card show" data-lang="fr">
     <h1>Politique de confidentialité</h1>
-    <p class="eff">En vigueur le 16 septembre 2026</p>
-    <p class="lead">Cotémon est conçu pour respecter votre vie privée : pas de compte, pas de publicité, pas de pistage inter-apps. La reconnaissance des cartes s’effectue sur votre appareil et votre collection est stockée localement.</p>
+    <p class="eff">En vigueur le 17 septembre 2026</p>
+    <p class="lead">Cotémon est conçu pour respecter votre vie privée : pas de compte, aucune publicité dans l’application, aucun identifiant publicitaire. La reconnaissance des cartes s’effectue d’abord sur votre appareil et votre collection est stockée localement.</p>
 
     <h2>Qui sommes-nous</h2>
     <p>L’application « Cotémon : Valeur Carte TCG » (« Cotémon », « l’application ») est éditée par Soufiane Chalouh (« nous »). Pour toute question relative à cette politique, contactez-nous à <a href="mailto:soufianechalouh@gmail.com">soufianechalouh@gmail.com</a>.</p>
 
     <h2>Données que nous traitons</h2>
     <ul>
-      <li><strong>Images de l’appareil photo :</strong> utilisées uniquement pour reconnaître le texte des cartes <strong>sur votre appareil</strong> (via Google ML Kit, en local). Les images ne sont ni téléversées ni conservées par nous.</li>
-      <li><strong>Votre collection :</strong> les cartes et informations que vous enregistrez sont stockées <strong>localement sur votre appareil</strong>. Elles ne nous sont pas transmises.</li>
+      <li><strong>Images de l’appareil photo :</strong> utilisées pour reconnaître le texte des cartes, d’abord <strong>sur votre appareil</strong> (via Google ML Kit, en local).</li>
+      <li><strong>Lecture des cartes par IA :</strong> lorsque votre appareil ne parvient pas à lire une carte, cette photo est envoyée à notre serveur (api.cotemon.app, hébergé sur <strong>Cloudflare</strong>), qui la transmet à <strong>Anthropic</strong> (modèle Claude) uniquement pour lire le texte imprimé sur la carte. Nous ne conservons pas les photos ; Anthropic les traite selon ses conditions commerciales, qui excluent leur utilisation pour entraîner ses modèles. Pour limiter l’usage, notre serveur conserve un identifiant d’installation généré aléatoirement et un compteur de lectures. Cette fonction est activée par défaut ; désactivez « Lecture des cartes par IA » dans les Réglages pour que chaque scan reste sur votre appareil.</li>
+      <li><strong>Votre collection :</strong> les cartes et informations que vous enregistrez sont stockées <strong>localement sur votre appareil</strong>. Elles ne nous sont pas transmises, sauf si vous choisissez de les partager.</li>
+      <li><strong>Partage de collection :</strong> si vous publiez votre collection, l’application envoie à notre serveur le nom facultatif que vous indiquez, la liste de vos cartes (noms et images du catalogue, et leurs prix uniquement si vous activez « Afficher la cote des cartes ») ainsi qu’une image d’aperçu générée à partir de ces cartes — jamais vos photos. Ces données sont publiées sur une page de cotemon.app visible par toute personne disposant du lien, et stockées sur Cloudflare. Elles sont supprimées lorsque vous arrêtez le partage, ou automatiquement un an après votre dernière publication. Un identifiant d’installation sert à limiter le nombre de publications par jour et n’est conservé qu’un jour.</li>
       <li><strong>Recherches de cartes :</strong> pour identifier une carte et afficher sa cote, l’application envoie des identifiants/termes de carte au service tiers <strong>TCGdex</strong> (api.tcgdex.net) afin de récupérer les détails, images et prix de marché (Cardmarket en EUR / TCGplayer en USD). Aucune donnée personnelle n’est incluse dans ces requêtes.</li>
       <li><strong>Historique des cotes :</strong> pour afficher l’évolution de la valeur de votre collection, l’application télécharge des fichiers de prix publics depuis <strong>data.cotemon.app</strong> (hébergé sur Cloudflare R2), un fichier par série que vous possédez. Ces fichiers sont identiques pour tous les utilisateurs et ne contiennent aucune donnée personnelle. Comme pour toute requête web, Cloudflare traite l’adresse IP de la connexion, et les identifiants de série demandés indiquent quelles séries vous collectionnez.</li>
       <li><strong>Achats et abonnements :</strong> gérés par <strong>Apple</strong> et <strong>RevenueCat</strong>. Pour gérer votre abonnement, RevenueCat traite un identifiant d’utilisateur généré aléatoirement, des informations sur l’appareil/le système et l’historique des transactions. Apple traite votre paiement. Nous n’avons jamais accès à vos coordonnées bancaires.</li>
       <li><strong>Statistiques d’utilisation :</strong> nous utilisons <strong>PostHog</strong> (hébergé dans l’UE) pour collecter des événements d’usage anonymes et internes à l’application (par exemple les fonctionnalités utilisées et les étapes du parcours d’abonnement) afin d’améliorer l’application. Il ne s’agit ni de publicité ni de pistage inter-apps ; les adresses IP sont supprimées à la réception. Vous pouvez vous désinscrire à tout moment dans les Réglages de l’application.</li>
+      <li><strong>Mesure publicitaire (avec votre accord) :</strong> nous faisons connaître Cotémon grâce à <strong>Google Ads</strong>. Si vous l’acceptez — la question est posée au premier lancement dans l’Espace économique européen, au Royaume-Uni et en Suisse ; ailleurs, la mesure est activée par défaut — l’application utilise <strong>Google Analytics for Firebase</strong> pour signaler à Google que l’application a été installée et ouverte, qu’une première carte a été scannée, qu’un essai gratuit a commencé ou qu’un achat a été effectué (avec son prix et sa devise). Firebase traite pour cela un identifiant d’installation de l’application, des informations sur l’appareil et le système, une localisation approximative déduite de l’adresse IP, et ces événements. L’application ne lit pas l’identifiant publicitaire de votre appareil (IDFA) et n’autorise pas la personnalisation des annonces. Votre collection et vos photos ne sont jamais envoyées. Vous pouvez retirer votre accord à tout moment dans les Réglages de l’application (« Mesurer nos publicités »), ce qui arrête toute collecte par Firebase.</li>
     </ul>
 
     <h2>Ce que nous ne faisons pas</h2>
     <ul>
       <li>Nous ne collectons pas votre nom ou votre e-mail (sauf si vous nous écrivez).</li>
-      <li>Nous n’affichons aucune publicité et n’utilisons aucun traceur publicitaire ou inter-apps.</li>
+      <li>Nous n’affichons aucune publicité dans l’application, ne lisons pas l’identifiant publicitaire de votre appareil et n’utilisons pas vos données pour personnaliser des annonces.</li>
       <li>Nous ne vendons ni ne louons vos données.</li>
-      <li>Nous n’exploitons aucun système de comptes. Les fichiers de prix que l’application télécharge sont statiques et identiques pour tous ; nous n’enregistrons aucun profil d’utilisateur.</li>
+      <li>Nous n’exploitons aucun système de comptes et ne constituons aucun profil d’utilisateur. Les fichiers de prix que l’application télécharge sont statiques et identiques pour tous.</li>
     </ul>
 
     <h2>Services tiers</h2>
@@ -50,18 +53,20 @@
       <li>RevenueCat — <a href="https://www.revenuecat.com/privacy/" target="_blank" rel="noopener">revenuecat.com/privacy</a></li>
       <li>PostHog — <a href="https://posthog.com/privacy" target="_blank" rel="noopener">posthog.com/privacy</a></li>
       <li>TCGdex — <a href="https://tcgdex.dev/" target="_blank" rel="noopener">tcgdex.dev</a></li>
-      <li>Cloudflare (hébergement des fichiers de prix) — <a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener">cloudflare.com/privacypolicy</a></li>
+      <li>Anthropic (lecture des cartes par IA) — <a href="https://www.anthropic.com/legal/privacy" target="_blank" rel="noopener">anthropic.com/legal/privacy</a></li>
+      <li>Cloudflare (serveur de l’application, pages partagées et fichiers de prix) — <a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener">cloudflare.com/privacypolicy</a></li>
       <li>Google ML Kit (reconnaissance de texte, exécutée sur l’appareil)</li>
+      <li>Google Analytics for Firebase et Google Ads (mesure publicitaire, avec votre accord) — <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a></li>
     </ul>
 
     <h2>Conservation et contrôle</h2>
-    <p>Les données locales (votre collection) demeurent sur votre appareil jusqu’à ce que vous les supprimiez dans l’application ou que vous désinstalliez l’application. Pour les données détenues par RevenueCat ou Apple, veuillez consulter leurs politiques ou nous contacter.</p>
+    <p>Les données locales (votre collection) demeurent sur votre appareil jusqu’à ce que vous les supprimiez dans l’application ou que vous désinstalliez l’application. Les événements de mesure publicitaire sont conservés par Google Analytics pendant 14 mois au plus. Pour les données détenues par RevenueCat, Apple ou Google, veuillez consulter leurs politiques ou nous contacter.</p>
 
     <h2>Base légale et vos droits (RGPD)</h2>
-    <p>Lorsque le RGPD s’applique, le traitement repose sur l’exécution du contrat (achats) et notre intérêt légitime à fournir les fonctionnalités de l’application. Vous disposez des droits d’accès, de rectification, d’effacement et d’opposition. La plupart de vos données résidant sur votre appareil, vous en gardez le contrôle direct ; pour le reste, écrivez-nous à <a href="mailto:soufianechalouh@gmail.com">soufianechalouh@gmail.com</a>.</p>
+    <p>Lorsque le RGPD s’applique, le traitement repose sur l’exécution du contrat (achats), notre intérêt légitime à fournir les fonctionnalités de l’application (dont la lecture des cartes par IA, que vous pouvez désactiver), votre demande lorsque vous partagez votre collection, et votre consentement pour la mesure publicitaire, que vous pouvez retirer à tout moment dans les Réglages. Vous disposez des droits d’accès, de rectification, d’effacement et d’opposition. La plupart de vos données résidant sur votre appareil, vous en gardez le contrôle direct ; pour le reste, écrivez-nous à <a href="mailto:soufianechalouh@gmail.com">soufianechalouh@gmail.com</a>.</p>
 
     <h2>Transferts internationaux</h2>
-    <p>Apple, RevenueCat, TCGdex et Cloudflare peuvent traiter des données en dehors de l’Espace économique européen, dans le respect de garanties appropriées.</p>
+    <p>Apple, RevenueCat, TCGdex, Cloudflare, Anthropic et Google peuvent traiter des données en dehors de l’Espace économique européen, dans le respect de garanties appropriées.</p>
 
     <h2>Enfants</h2>
     <p>L’application n’est pas destinée aux enfants de moins de 13 ans et nous ne collectons pas sciemment de données personnelles les concernant.</p>
@@ -76,28 +81,31 @@
   <!-- ENGLISH -->
   <section class="card" data-lang="en">
     <h1>Privacy Policy</h1>
-    <p class="eff">Effective 16 September 2026</p>
-    <p class="lead">Cotémon is built to respect your privacy: no account, no ads, no cross-app tracking. Card recognition runs on your device and your collection is stored locally.</p>
+    <p class="eff">Effective 17 September 2026</p>
+    <p class="lead">Cotémon is built to respect your privacy: no account, no ads in the app, no advertising identifier. Card recognition runs on your device first, and your collection is stored locally.</p>
 
     <h2>Who we are</h2>
     <p>The app “Cotémon: TCG Card Scanner” (“Cotémon”, “the app”) is published by Soufiane Chalouh (“we”, “us”). For any question about this policy, contact us at <a href="mailto:soufianechalouh@gmail.com">soufianechalouh@gmail.com</a>.</p>
 
     <h2>Data we process</h2>
     <ul>
-      <li><strong>Camera images:</strong> used only to recognize card text <strong>on your device</strong> (via Google ML Kit, locally). Images are not uploaded or retained by us.</li>
-      <li><strong>Your collection:</strong> the cards and notes you save are stored <strong>locally on your device</strong>. They are not transmitted to us.</li>
+      <li><strong>Camera images:</strong> used to recognize card text, first <strong>on your device</strong> (via Google ML Kit, locally).</li>
+      <li><strong>AI card reading:</strong> when your device cannot read a card, that photo is sent to our server (api.cotemon.app, hosted on <strong>Cloudflare</strong>), which passes it to <strong>Anthropic</strong> (Claude model) solely to read the text printed on the card. We do not store the photos; Anthropic processes them under its commercial terms, which exclude using them to train its models. To limit usage, our server keeps a randomly generated installation identifier and a count of readings. This feature is on by default; turn off “AI card reading” in Settings to keep every scan on your device.</li>
+      <li><strong>Your collection:</strong> the cards and notes you save are stored <strong>locally on your device</strong>. They are not transmitted to us unless you choose to share them.</li>
+      <li><strong>Collection sharing:</strong> if you publish your collection, the app sends our server the optional name you enter, your card list (catalog names and images, plus prices only if you turn on “Show card values”), and a preview image generated from those cards — never your photos. This is published on a cotemon.app page that anyone with the link can view, and stored on Cloudflare. It is deleted when you stop sharing, or automatically one year after you last published. An installation identifier is used to limit publishes per day and is kept for one day only.</li>
       <li><strong>Card lookups:</strong> to identify a card and show its value, the app sends card identifiers/search terms to the third-party service <strong>TCGdex</strong> (api.tcgdex.net) to retrieve details, images, and market prices (Cardmarket in EUR / TCGplayer in USD). No personal data is included in these requests.</li>
       <li><strong>Price history:</strong> to show how your collection’s value changes over time, the app downloads public price files from <strong>data.cotemon.app</strong> (hosted on Cloudflare R2), one file per card set you own. These files are identical for every user and contain no personal data. As with any web request, Cloudflare processes the connection’s IP address, and the set identifiers requested indicate which sets you collect.</li>
       <li><strong>Purchases and subscriptions:</strong> handled by <strong>Apple</strong> and <strong>RevenueCat</strong>. To manage your subscription, RevenueCat processes a randomly generated user identifier, device/OS information, and transaction history. Apple processes your payment. We never have access to your payment card details.</li>
       <li><strong>Usage analytics:</strong> we use <strong>PostHog</strong> (EU-hosted) to collect anonymous, first-party product-usage events (for example, which features are used and subscription funnel steps) to improve the app. This is not advertising and not cross-app tracking; IP addresses are discarded at ingestion. You can opt out anytime in the app’s Settings.</li>
+      <li><strong>Advertising measurement (with your consent):</strong> we promote Cotémon with <strong>Google Ads</strong>. If you allow it — you are asked on first launch in the European Economic Area, the UK and Switzerland; elsewhere, measurement is on by default — the app uses <strong>Google Analytics for Firebase</strong> to tell Google that the app was installed and opened, that a first card was scanned, that a free trial started, or that a purchase was made (with its price and currency). To do so, Firebase processes an app-installation identifier, device and OS information, an approximate location derived from the IP address, and these events. The app does not read your device’s advertising identifier (IDFA) and does not allow ad personalization. Your collection and photos are never sent. You can withdraw consent anytime in the app’s Settings (“Help measure our ads”), which stops all Firebase collection.</li>
     </ul>
 
     <h2>What we do not do</h2>
     <ul>
       <li>We do not collect your name or email (unless you write to us).</li>
-      <li>We show no ads and use no advertising or cross-app tracking.</li>
+      <li>We show no ads in the app, do not read your device’s advertising identifier, and do not use your data to personalize ads.</li>
       <li>We do not sell or rent your data.</li>
-      <li>We operate no account system. The price files the app downloads are static and the same for everyone; we build no user profile from them.</li>
+      <li>We operate no account system and build no user profiles. The price files the app downloads are static and the same for everyone.</li>
     </ul>
 
     <h2>Third-party services</h2>
@@ -107,18 +115,20 @@
       <li>RevenueCat — <a href="https://www.revenuecat.com/privacy/" target="_blank" rel="noopener">revenuecat.com/privacy</a></li>
       <li>PostHog — <a href="https://posthog.com/privacy" target="_blank" rel="noopener">posthog.com/privacy</a></li>
       <li>TCGdex — <a href="https://tcgdex.dev/" target="_blank" rel="noopener">tcgdex.dev</a></li>
-      <li>Cloudflare (price-file hosting) — <a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener">cloudflare.com/privacypolicy</a></li>
+      <li>Anthropic (AI card reading) — <a href="https://www.anthropic.com/legal/privacy" target="_blank" rel="noopener">anthropic.com/legal/privacy</a></li>
+      <li>Cloudflare (app server, shared pages, and price files) — <a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener">cloudflare.com/privacypolicy</a></li>
       <li>Google ML Kit (text recognition, runs on device)</li>
+      <li>Google Analytics for Firebase and Google Ads (advertising measurement, with your consent) — <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a></li>
     </ul>
 
     <h2>Retention and control</h2>
-    <p>Local data (your collection) remains on your device until you delete it in the app or uninstall the app. For data held by RevenueCat or Apple, please refer to their policies or contact us.</p>
+    <p>Local data (your collection) remains on your device until you delete it in the app or uninstall the app. Advertising-measurement events are kept by Google Analytics for up to 14 months. For data held by RevenueCat, Apple, or Google, please refer to their policies or contact us.</p>
 
     <h2>Legal basis and your rights (GDPR)</h2>
-    <p>Where the GDPR applies, processing is based on performance of the contract (purchases) and our legitimate interest in providing the app’s features. You have rights of access, rectification, erasure, and objection. As most of your data lives on your device, you control it directly; for the rest, email us at <a href="mailto:soufianechalouh@gmail.com">soufianechalouh@gmail.com</a>.</p>
+    <p>Where the GDPR applies, processing is based on performance of the contract (purchases), our legitimate interest in providing the app’s features (including AI card reading, which you can turn off), your request when you share your collection, and your consent for advertising measurement, which you can withdraw anytime in Settings. You have rights of access, rectification, erasure, and objection. As most of your data lives on your device, you control it directly; for the rest, email us at <a href="mailto:soufianechalouh@gmail.com">soufianechalouh@gmail.com</a>.</p>
 
     <h2>International transfers</h2>
-    <p>Apple, RevenueCat, TCGdex, and Cloudflare may process data outside the European Economic Area, subject to appropriate safeguards.</p>
+    <p>Apple, RevenueCat, TCGdex, Cloudflare, Anthropic, and Google may process data outside the European Economic Area, subject to appropriate safeguards.</p>
 
     <h2>Children</h2>
     <p>The app is not directed to children under 13, and we do not knowingly collect personal data from them.</p>
